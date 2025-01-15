@@ -14,6 +14,7 @@ export default class Browser {
     access = (page) => {
         this.backStack.push(this.currentPage);
         this.currentPage = page;
+        this.forwardStack.clear();
     }
 
     back = () => {
